@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+
+<body>
+<style>
+body {
+  background-color: black;
+}
+
+h1 {
+  color: Gold;
+  text-align: center;
+  font-family: Georgia;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+  color: lime;
+  text-align: center;
+}
+
+button {
+  font-family: helvetica;
+  font-size: 20px;
+  color: Black;
+  text-align: center;
+  align: center;
+}
+
+.container { 
+  height: 200px;
+  position: relative;
+  border: 3px solid purple; 
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}	
+</style>
+
+<h1>Welcome to my Humble Website! :)</h1>
+
+
+
+<p id="demo">Hello! my name is Aron Singel. How are you today?</p>
+<div class="container">
+  <div class="center">
+	<button type="button" onclick='document.getElementById("demo").innerHTML = "Me too! Thank you for taking the time to view my website. :)"'>I am doing Wonderful!</button>
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "I am sorry to hear that, I hope it gets better for you!"'>I have seen better days.</button>
+ </div>
+</div>
+
+<p id="about me">Click the "About me" button to learn more about me</p>
+<div class="container">
+  <div class="center">
+  <button type="button" onclick='document.getElementById("about me").innerHTML = "I am an eagle scout!"'>About me </button>
+  </div>
+</div>
+
+<p id="time">Do you need a date and time check?</p>
+<div class="container">
+  <div class="center">
+	<button type="button"
+onclick="document.getElementById('time').innerHTML = Date()">
+Click me to display Date and Time.</button>
+  </div>
+</div>
+
+<p id="picture">I also like to create 3d art with blender! Here is my recent spooky October project. </p>
+<img src="images/3d_Graveyard.png" alt="Graveyard" width="460" height="345">
+</body>
+</html>
